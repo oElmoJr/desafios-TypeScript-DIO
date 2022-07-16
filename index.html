@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="dist/desafio1.js" defer></script>
+    <script src="dist/desafio1.js" defer></script>
+    <script src="dist/desafio3.js" defer></script>
+    <script src="dist/desafio4.js" defer></script>
+    <script src="dist/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h4>
+            Valor a ser adicionado: 
+            <input id="soma" class="input">
+        </h4>
+        
+        <button id="atualizar-saldo" class="btn">Atualizar saldo</button>
+        <button id="limpar-saldo" class="btn">Limpar seu saldo</button>
+        
+        <h1>
+            Seu saldo é:  
+            <span id="campo-saldo"></span>
+        </h1>
+
+    </div>
+    <div class="container" style="display: flex; flex-direction: row;">
+        <div style="display: flex; width: 300px;  justify-content: space-between; flex-direction: column;">
+            <input class="input" id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input class="input" id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input class="input" id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <button class="btn" id="login-button" disabled>Login</button>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input class="input" id="search" placeholder="Escreva...">
+            <button class="btn" id="search-button">Pesquisar Filme</button>
+        </div>
+      </div>
+</body>
+</html>
